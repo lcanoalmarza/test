@@ -237,7 +237,7 @@ def create_heatmap(dibujo, xsteps, timemax):
                   aspect='auto', 
                   origin='lower',
                   extent=extent,
-                  cmap='viridis')
+                  cmap='turbo')
     
     plt.colorbar(im, ax=ax, label='Resistant bacteria proportion')
     
