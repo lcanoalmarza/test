@@ -113,12 +113,12 @@ with st.sidebar.expander("Basic Parameters", expanded=True):
                     step=1, 
                     help="Initial proportion of resistant bacteria (in scientific notation)")
     
-    g = st.slider("Growth rate (g)", 
+    g = st.slider("Increase in growth rate (g)", 
                 min_value=0.001, max_value=0.01, 
                 value=st.session_state.custom_params["g"], 
                 step=0.001,
                 format="%.3f",
-                help="Growth rate of resistant bacteria")
+                help="Increase in growth rate of resistant bacteria")
     
     l = st.slider("Plasmid's fitness cost (λ)", 
                min_value=0.0001, max_value=0.005, 
